@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Kis munkáltatóknak: havi bér, járulékok és adók, a 08-as bevallás adatai a NAV felé és a munkaszerződések egy helyen.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,37 +77,103 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Bér Rendben</a></div>
-  <nav class="top"><a href="#mit" data-ev="click_nav_mit">Amit kap</a><a href="price.html" data-ev="click_nav_ar">Ár</a><a href="#pelda" data-ev="click_nav_pelda">Példa</a><a href="#start" data-ev="click_nav_start">Kezdés</a></nav>
-</div></header>
+<header class="ib-head">
+  <div class="ib-frame ib-head-row">
+    <div class="ib-logo"><a href="index.html" data-ev="click_logo_home">Bér Rendben<sup aria-hidden="true">®</sup></a></div>
+    <nav class="ib-nav" aria-label="Fő menü"><a href="#mit" data-ev="click_nav_mit">Amit kap</a><a href="price.html" data-ev="click_nav_ar">Ár</a><a href="#pelda" data-ev="click_nav_pelda">Példa</a><a href="#start" data-ev="click_nav_start">Kezdés</a></nav>
+  </div>
+</header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>A dolgozók havi bére, a 08-as bevallás és a munkaszerződések — egy helyen, minden hónapban</h1>
-    <p class="sub">Kis cégeknek néhány vagy néhány tucat dolgozóval: megadja a dolgozók adatait és a hónap jelenlétét, a program kiszámolja a bruttó és nettó bért, a járulékokat és az adókat, elkészíti a bérjegyzéket és a havi bevallás adatait, a munkaszerződések pedig mintából készülnek.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Erre van szükségem</a>
-    <p class="cta-note">A szolgáltatás előkészítés alatt · Ezen az oldalon nem lehet fizetni</p>
+<main class="ib-frame">
+
+  <div class="ib-meta" aria-hidden="true">
+    <span>[ Bérszámfejtés / kis cégek ]</span><span>&gt;&gt;&gt; Bér · Bevallás · Szerződés</span><span>Magyarország</span>
   </div>
 
-  <section id="mit" data-view="features_view">
-    <h2>Amit kap</h2>
-    <div class="grid">
-      <div class="card"><b>Havi bér</b><span>Bruttó, nettó, járulékok és adók dolgozónként.</span><br><a class="btn" href="price.html" data-ev="feature_ber">Erre van szükségem</a></div>
-      <div class="card"><b>08-as bevallás</b><span>A havi bevallás adatai a NAV felé, ellenőrzésre készen.</span><br><a class="btn" href="price.html" data-ev="feature_bevallas">Erre van szükségem</a></div>
-      <div class="card"><b>Munkaszerződések</b><span>Szerződés és módosítás mintából, a dolgozó adataival.</span><br><a class="btn" href="price.html" data-ev="feature_szerzodes">Erre van szükségem</a></div>
-      <div class="card"><b>Bérjegyzék</b><span>Bérjegyzék minden dolgozónak, e-mailben vagy nyomtatva.</span><br><a class="btn" href="price.html" data-ev="feature_berjegyzek">Erre van szükségem</a></div>
+  <section class="ib-hero">
+    <div class="ib-hero-text">
+      <h1>Bér, 08-as bevallás és munka&shy;szerződések — egy helyen, minden hónapban</h1>
+      <p class="ib-sub">Kis cégeknek néhány vagy néhány tucat dolgozóval: megadja a dolgozók adatait és a hónap jelenlétét, a program kiszámolja a bruttó és nettó bért, a járulékokat és az adókat, elkészíti a bérjegyzéket és a havi bevallás adatait, a munkaszerződések pedig mintából készülnek.</p>
+      <div class="ib-cta-row">
+        <a class="ib-cta" href="price.html" data-ev="cta_click">Erre van szükségem</a>
+      </div>
+    </div>
+    <figure class="ib-plate" aria-hidden="true">
+      <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg" role="presentation">
+        <defs>
+          <pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.1" fill="#111"/></pattern>
+        </defs>
+        <rect x="0.5" y="0.5" width="319" height="399" fill="#F4F4F0" stroke="#111"/>
+        <rect x="0" y="0" width="320" height="44" fill="#111"/>
+        <text x="16" y="28" class="t-mono t-inv">BÉRJEGYZÉK</text>
+        <text x="304" y="28" text-anchor="end" class="t-mono t-red">[ HÓ ]</text>
+        <g class="t-mono t-sm">
+          <text x="16" y="74">DOLGOZÓ</text>
+          <text x="16" y="124">BRUTTÓ</text>
+          <text x="16" y="164">JÁRULÉK</text>
+          <text x="16" y="204">ADÓ</text>
+          <text x="16" y="254">NETTÓ</text>
+        </g>
+        <rect x="120" y="64" width="184" height="12" fill="#111"/>
+        <rect x="120" y="114" width="168" height="12" fill="url(#dots)"/>
+        <rect x="120" y="154" width="64" height="12" fill="#111"/>
+        <rect x="120" y="194" width="44" height="12" fill="#111"/>
+        <line x1="16" y1="226" x2="304" y2="226" stroke="#111" stroke-width="2"/>
+        <rect x="120" y="242" width="140" height="16" fill="#E61919"/>
+        <line x1="0" y1="96" x2="320" y2="96" stroke="#111"/>
+        <line x1="0" y1="282" x2="320" y2="282" stroke="#111"/>
+        <g fill="#111">
+          <rect x="16" y="300" width="3" height="56"/><rect x="22" y="300" width="1" height="56"/><rect x="26" y="300" width="5" height="56"/>
+          <rect x="34" y="300" width="2" height="56"/><rect x="39" y="300" width="1" height="56"/><rect x="43" y="300" width="4" height="56"/>
+          <rect x="50" y="300" width="1" height="56"/><rect x="54" y="300" width="3" height="56"/><rect x="60" y="300" width="2" height="56"/>
+          <rect x="65" y="300" width="5" height="56"/><rect x="73" y="300" width="1" height="56"/><rect x="77" y="300" width="2" height="56"/>
+          <rect x="82" y="300" width="4" height="56"/><rect x="89" y="300" width="1" height="56"/><rect x="93" y="300" width="3" height="56"/>
+        </g>
+        <text x="304" y="322" text-anchor="end" class="t-mono t-sm">NAV / 08</text>
+        <text x="304" y="350" text-anchor="end" class="t-mono t-sm">ELLENŐRIZVE ✕</text>
+        <g stroke="#E61919" stroke-width="1.5">
+          <line x1="296" y1="380" x2="312" y2="380"/><line x1="304" y1="372" x2="304" y2="388"/>
+          <line x1="8" y1="380" x2="24" y2="380"/><line x1="16" y1="372" x2="16" y2="388"/>
+        </g>
+      </svg>
+      <span class="ib-plate-num">08</span>
+    </figure>
+  </section>
+
+  <div class="ib-warn">
+    <p class="ib-warn-text">A szolgáltatás előkészítés alatt · Ezen az oldalon nem lehet fizetni</p>
+  </div>
+
+  <section id="mit" class="ib-sec" data-view="features_view">
+    <div class="ib-sec-head"><span class="ib-idx" aria-hidden="true">[ A ]</span><h2>Amit kap</h2></div>
+    <div class="ib-grid">
+      <div class="ib-cell"><span class="ib-cell-id" aria-hidden="true">01 /</span><h3>Havi bér</h3><p>Bruttó, nettó, járulékok és adók dolgozónként.</p><a class="ib-btn" href="price.html" data-ev="feature_ber">Erre van szükségem</a></div>
+      <div class="ib-cell ib-cell-red"><span class="ib-cell-id" aria-hidden="true">02 /</span><h3>08-as bevallás</h3><p>A havi bevallás adatai a NAV felé, ellenőrzésre készen.</p><a class="ib-btn" href="price.html" data-ev="feature_bevallas">Erre van szükségem</a></div>
+      <div class="ib-cell"><span class="ib-cell-id" aria-hidden="true">03 /</span><h3>Munka&shy;szerződések</h3><p>Szerződés és módosítás mintából, a dolgozó adataival.</p><a class="ib-btn" href="price.html" data-ev="feature_szerzodes">Erre van szükségem</a></div>
+      <div class="ib-cell"><span class="ib-cell-id" aria-hidden="true">04 /</span><h3>Bérjegyzék</h3><p>Bérjegyzék minden dolgozónak, e-mailben vagy nyomtatva.</p><a class="ib-btn" href="price.html" data-ev="feature_berjegyzek">Erre van szükségem</a></div>
     </div>
   </section>
 
-  <section id="pelda" data-view="example_view">
-    <h2>Példa (kitalált adatok)</h2>
-    <p class="fine">Kis pékség hét dolgozóval, kettő közülük részmunkaidős. A hónap végén a tulajdonos megadja a ledolgozott órákat és egy szabadságot. A program kiszámolja a béreket és a járulékokat, elkészíti a hét bérjegyzéket és a havi bevallás adatait, a könyvelő pedig ellenőrzi és beküldi.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Csomag választása</a>
+  <section id="pelda" class="ib-sec ib-example" data-view="example_view">
+    <div class="ib-sec-head"><span class="ib-idx" aria-hidden="true">[ B ]</span><h2>Példa (kitalált adatok)</h2></div>
+    <div class="ib-example-body">
+      <dl class="ib-sheet">
+        <div><dt>Cég</dt><dd>Kis pékség</dd></div>
+        <div><dt>Dolgozók</dt><dd>Hét</dd></div>
+        <div><dt>Részmunkaidős</dt><dd>Kettő</dd></div>
+        <div><dt>Hónap végén</dt><dd>Órák, szabadság</dd></div>
+        <div><dt>Eredmény</dt><dd>Bérjegyzékek, bevallás</dd></div>
+      </dl>
+      <div class="ib-example-text">
+        <p class="ib-fine">Kis pékség hét dolgozóval, kettő közülük részmunkaidős. A hónap végén a tulajdonos megadja a ledolgozott órákat és egy szabadságot. A program kiszámolja a béreket és a járulékokat, elkészíti a hét bérjegyzéket és a havi bevallás adatait, a könyvelő pedig ellenőrzi és beküldi.</p>
+        <a class="ib-cta" href="price.html" data-ev="click_cta_after_example">Csomag választása</a>
+      </div>
+    </div>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Hogyan működik</h2>
+  <section id="opis" class="ib-sec ib-doc">
+    <div class="ib-sec-head"><span class="ib-idx" aria-hidden="true">[ C ]</span><h2>Hogyan működik</h2></div>
+    <div class="ib-cols">
     <p>Egy kis cég, amelynek dolgozói vannak, minden hónapban kiszámolja a béreket, a járulékokat és az adókat, és havonta bevallást küld a NAV-nak a foglalkoztatással kapcsolatos adatokról. Ehhez jönnek a munkaszerződések, a módosítások és a bérjegyzékek.</p>
     <p>Sok kis cég ezt teljesen a könyvelőre bízza, és havonta fizet érte dolgozónként. Mások táblázatban számolnak, ami addig működik, amíg nem változik egy szabály, nem jön egy új dolgozó vagy nem kell részmunkaidőt, szabadságot és betegszabadságot is figyelembe venni.</p>
     <p>A program egy helyen végzi el a havi bérszámfejtést. Egyszer megadja a cég és a dolgozók adatait: munkakör, munkaidő, alapbér, kedvezmények. Minden hónapban csak a hónap változásait kell rögzíteni.</p>
@@ -119,32 +189,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Ha a cégnek könyvelője van, hozzáférést kaphat a programhoz, és ugyanazokat az adatokat látja, mint Ön. Így nem kell táblázatokat küldözgetni, és nem keverednek össze a verziók.</p>
     <p>Az indulás egy estét vesz igénybe: a cég adatai, a dolgozók és az alapbérek. A program böngészőben fut számítógépen, táblagépen és telefonon, telepítés nélkül.</p>
     <p>A program kis munkáltatóknak készül Magyarországon. Jelenleg előkészítés alatt áll: először azt vizsgáljuk, szükségük van-e rá a cégeknek. A bevallásokért és a bérszámfejtésért a munkáltató felel.</p>
+    </div>
   </section>
-  <section id="faq">
-    <h2>Kérdések és válaszok</h2>
-    <h3>Kinek szól a program?</h3>
-    <p>Kis munkáltatóknak Magyarországon, néhány vagy néhány tucat dolgozóval.</p>
-    <h3>Elkészíti a havi bevallást?</h3>
-    <p>Elkészíti a havi 08-as bevallás adatait; Ön vagy a könyvelője ellenőrzi és küldi be.</p>
-    <h3>Készít munkaszerződést?</h3>
-    <p>Igen, mintából, a dolgozó adataival, és a módosításokat is.</p>
-    <h3>Kell telepíteni valamit?</h3>
-    <p>Nem, a program böngészőben fut számítógépen, táblagépen és telefonon.</p>
-    <h3>Használhatom már?</h3>
-    <p>Még nem. A program előkészítés alatt áll, és azt vizsgáljuk, szükségük van-e rá a cégeknek.</p>
+  <section id="faq" class="ib-sec ib-faq">
+    <div class="ib-sec-head"><span class="ib-idx" aria-hidden="true">[ D ]</span><h2>Kérdések és válaszok</h2></div>
+    <div class="ib-faq-list">
+    <div class="ib-qa"><h3>Kinek szól a program?</h3>
+    <p>Kis munkáltatóknak Magyarországon, néhány vagy néhány tucat dolgozóval.</p></div>
+    <div class="ib-qa"><h3>Elkészíti a havi bevallást?</h3>
+    <p>Elkészíti a havi 08-as bevallás adatait; Ön vagy a könyvelője ellenőrzi és küldi be.</p></div>
+    <div class="ib-qa"><h3>Készít munkaszerződést?</h3>
+    <p>Igen, mintából, a dolgozó adataival, és a módosításokat is.</p></div>
+    <div class="ib-qa"><h3>Kell telepíteni valamit?</h3>
+    <p>Nem, a program böngészőben fut számítógépen, táblagépen és telefonon.</p></div>
+    <div class="ib-qa"><h3>Használhatom már?</h3>
+    <p>Még nem. A program előkészítés alatt áll, és azt vizsgáljuk, szükségük van-e rá a cégeknek.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Adja meg a cégét</h2>
-    <p><label>Dolgozók száma<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— válasszon —</option><option>1–3</option><option>4–10</option><option>11–30</option><option>Több mint 30</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Kezdés</a>
+  <section id="start" class="ib-sec ib-start" data-view="start_view">
+    <div class="ib-sec-head"><span class="ib-idx" aria-hidden="true">[ E ]</span><h2>Adja meg a cégét</h2></div>
+    <div class="ib-form">
+      <label class="ib-label" for="ib-dolgozok">Dolgozók száma</label>
+      <select id="ib-dolgozok" class="ib-select" data-ev-focus="form_start"><option value="">— válasszon —</option><option>1–3</option><option>4–10</option><option>11–30</option><option>Több mint 30</option></select>
+      <a class="ib-cta ib-cta-red" href="price.html" data-ev="form_submit_click">Kezdés</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
-  <p><a href="privacy.html" data-ev="click_legal_privacy">Adatvédelem</a></p>
-  <p class="muted">Bérszámfejtő program az Ön adataival. A bevallásokért és a bérszámfejtésért a munkáltató felel.</p>
-</div></footer>
+<footer class="ib-foot">
+  <div class="ib-frame ib-foot-row">
+    <p class="ib-foot-link"><a href="privacy.html" data-ev="click_legal_privacy">Adatvédelem</a></p>
+    <p class="ib-foot-note">Bérszámfejtő program az Ön adataival. A bevallásokért és a bérszámfejtésért a munkáltató felel.</p>
+    <p class="ib-foot-mark" aria-hidden="true">Bér Rendben®</p>
+  </div>
+</footer>
 
 </body>
 </html>
